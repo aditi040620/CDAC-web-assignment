@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Cdac-web-assignment
+**Overview:**
+  This project features a login and registration form component built with React. It includes:
+  - A login form with email and password fields.
+  - A registration form with name, email, and password fields.
+  - Password visibility toggle for both login and registration forms.
+  - A switch panel to toggle between login and registration views.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Setup and Installation**:
+  1. npx create-react-app loginregister:
+     Purpose: This command creates a new React project called loginregister using the official create-react-app tool.
+  2. npm install axios:
+     Purpose: Installs axios, a popular HTTP client for making API requests from the browser or Node.js.
+  3. npm install react-router-dom
+     Purpose: Installs react-router-dom, a library that enables routing in React applications.
+  4. npm install bootstrap:
+     Purpose:The command npm install bootstrap installs the Bootstrap library to provide pre-built, responsive CSS styles and components for web development.
+  5. npm install @mui/material @emotion/react @emotion/styled:
+     Purpose: Installs Material-UI (MUI) components along with @emotion/react and @emotion/styled for styling.
+  6. npm install react-icons
+     Purpose: Installs react-icons, specifically the FontAwesome icons (fa), to easily add icons to your React project.
+**Note**:Once it's installed, you need to import the Bootstrap CSS into your React project. Open the src/index.js (or src/index.tsx if you're using TypeScript) file and add the following import statement at the top:
+**import 'bootstrap/dist/css/bootstrap.min.css';**
+This will load Bootstrap styles globally in your React app. You can now use Bootstrap classes in your components.
 
-## Available Scripts
 
-In the project directory, you can run:
+**Component Details:**
 
-### `npm start`
+**LoginRegister Component**:
+  The LoginRegister component handles user login and registration functionality.
+  - Password Visibility: Toggle visibility for both login and registration passwords.
+  - Form Submission: Sends API requests for login and registration.
+  - Switch Panel: Allows users to switch between the login and registration forms.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**App Component**:
+  The App component sets up routing for the application and renders the LoginRegister component.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Styles**:
+  The project uses custom styles for layout and responsiveness. Key CSS classes include:
+  - .content: Container for the form, with background and border radius.
+  - .switch-content: Handles the transition between login and registration forms.
+  - Media queries adjust styles for small, medium, and large screens.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**API Endpoints**
+  The current API endpoints are placeholders (https://jsonplaceholder.typicode.com/posts). Replace these with your actual API endpoints for login and registration.
